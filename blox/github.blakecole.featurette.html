@@ -20,9 +20,9 @@
     </div>
   {{ end }}
 
-  <div class="flex flex-wrap justify-center">
+  <div class="flex flex-wrap justify-center gap-8">
     {{ range $features }}
-      <div class="flex flex-col items-center w-full sm:w-auto max-w-min">
+      <div class="flex flex-col items-center">
         {{/* Render the icon: if it starts with "devicon/", use Devicon; otherwise, use Font Awesome via icon_pack */}}
         {{ $iconStr := .icon | default "" }}
         {{ if in $iconStr "devicon/" }}
